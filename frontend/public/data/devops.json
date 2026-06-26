@@ -1,0 +1,85 @@
+{
+  "topicName" : "DevOps",
+  "slug" : "devops",
+  "topicUrl" : "https://interview.in28minutes.com/devops/",
+  "pdfFile" : "DevOps_Interview_Guide.pdf",
+  "sections" : [ {
+    "title" : "DevOps Fundamentals",
+    "slug" : "devops-fundamentals",
+    "url" : "https://interview.in28minutes.com/interview-guides/devops/devops-fundamentals/",
+    "questionAnswers" : [ {
+      "question" : "What is DevOps?",
+      "answer" : "[Image: DevOps | https://interview.in28minutes.com/img/cloud-and-devops/devops.jpg]\n\n• Scenario: Developers build features - they want to see new features in production. Operations want production to stable - very few changes. Developers and Operations work in silos => (delays, finger-pointing, no team spirit). Can we build and run software together?\n• DevOps: A culture and set of practices that bring Development and Operations teams together to deliver software faster, safer, and continuously.\n\nNo Strict Definition\n\n• Amazon Web Services(AWS): \"DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity\"\n• The DevOps Handbook - Gene Kim , Patrick Debois, Et al.: \"DevOps is the outcome of applying the most trusted principles from the domain of physical manufacturing and leadership to the IT value stream. DevOps relies on bodies of knowledge from Lean, Theory of Constraints, the Toyota Production System, resilience engineering, learning organizations, safety culture, human factors, and many others. The result is world-class reliability, stability, and security at ever lower cost and effort; and accelerated flow and reliability through the technology value stream, including Product Management, Development, QA, IT Operations, and Infosec.\"\n\nDevOps is about Collaboration\n\n• Dev + Ops = DevOps: Teams work together across the software lifecycle\n• Shared Goals: Build fast, release often, stay stable\n• Cultural Shift: Break down walls between teams\n\nDevOps is about Quick Feedback\n\n• Business can’t wait: Releasing new features after months slows product innovation\n• Defects/Issues shouldn't wait: Developers want to be notified about code quality issues or unit test failures immediately\n• Continuous Improvement: Quick feedback loops help refine features and fix things faster\n\nDevOps is about Automation\n\n• Manual = Slow + Error-Prone: Repeating steps by hand increases chances of mistakes\n• Not Scalable: What works for 1 server won’t work for 100 or 1000 or 10,000 servers\n• Automation Brings:\n  ◦ Speed – Do things quickly\n  ◦ Reliability – Same steps, every time (less chance of errors)\n\n[Image: Environments | https://interview.in28minutes.com/img/cloud-and-devops/environments.jpg]\n\n[Image: Continuous Deployment | https://interview.in28minutes.com/img/cloud-and-devops/continuous-deployment.jpg]\n\nKey DevOps Practices\n\n• Version Control: All code (infra + app) tracked in Git\n• CI (Continuous Integration): Compile code, build package, check code quality, run unit tests, .. immediately after code is committed to version control\n• CD (Continuous Delivery/Deployment): Automating deployment of code\n• Infrastructure as Code (IaC): Use code to create your resources\n• Standardization: Use language neutral and platform neutral tools that can standardize your operations (Docker + Kubernetes)\n• Observability: Understand what's happening inside a system (Metrics + Logs + Traces)\n\n[Image: Environments | https://interview.in28minutes.com/img/cloud-and-devops/multiple-containers.jpg]",
+      "codeBlocks" : [ ]
+    }, {
+      "question" : "How Did We Evolve to DevOps?",
+      "answer" : "1. Waterfall Era – Slow & Rigid\n\n• Waterfall: One big team working in phases – requirements → design → build → test → deploy\n• Problems:\n  ◦ Long release cycles (months or years)\n  ◦ No feedback until late stages\n  ◦ Developers and operations teams worked separately with conflicting priorities\n• Result: Slow delivery and unhappy teams!\n\n[Image: Software Development | https://interview.in28minutes.com/img/cloud-and-devops/software-development.jpg]\n\n2. Agile Era – Fast but..\n\n• What Changed:\n  ◦ Software started being built in iterations (2–4 weeks)\n  ◦ Agile brought collaboration (Business + Dev) and customer feedback into development\n  ◦ Developers focused on code quality and started writing automation tests - unit tests, ..\n• But Still a Problem:\n  ◦ Dev teams moved fast, but operations lagged behind\n  ◦ Manual deployments and manual environment creation caused bottlenecks\n\n3. Rise of DevOps – Deliver Fast & Operate Smoothly\n\n• Goal: Bridge the gap between development and operations\n• Key Enablers:\n  ◦ Automation: CI/CD, Containers, IaC\n  ◦ Collaboration: Shared responsibility\n  ◦ Observability: Fix issues early, improve continuously\n• Benefits:\n  ◦ Faster delivery with fewer errors\n  ◦ Scalable, reliable systems\n  ◦ Happier teams and users\n\nDevOps Is a Mindset Shift\n\n• From silos to shared ownership and responsibility\n• From “throw code over the wall” to “build and run it together”\n• From manual work to automated, continuous delivery",
+      "codeBlocks" : [ ]
+    }, {
+      "question" : "What is Continuous Integration (CI) and Continuous Deployment (CD)?",
+      "answer" : "What is Continuous Integration (CI)?\n\n• Scenario: Developers work on the same code base. Without coordination, compilation issues, code quality issues or unit testing issues pop up late. Can we catch issues early?\n• Continuous Integration (CI): Developers frequently merge code into a shared repository. Automated builds and tests run on every change.\n• Goal: Catch bugs early and integrate code often\n• Benefits: Fewer integration issues, fewer defects, faster feedback\n\n[Image: continuous deployment | https://interview.in28minutes.com/img/cloud-and-devops/continuous-deployment.jpg]\n\nWhat is Continuous Deployment/Continuous Delivery?\n\n• Scenario: After code is tested, deployment still needs manual steps. This delays feedback and delivery. Can we automate deployments too?\n• Continuous Delivery (Deployment): Automatically deploy tested code to environments like Dev, QA, and even Production\n• Goal: Deliver features to users quickly and safely\n• Benefits: Faster releases, less manual work, consistent deployments\n\nCI/CD Pipeline\n\n• Build - Test - Deploy: Code is built, tested, and deployed automatically\n• Triggers: Starts on every code change or pull request\n• Fast Feedback: Issues are found and fixed early\n\nHow can you implement CI/CD?\n\n• General Tools: GitHub Actions, Jenkins, Argo CD\n• Cloud: AWS CodePipeline, AWS CodeBuild, AWS CodeDeploy, Azure DevOps, Google Cloud Build, Google Cloud Deploy, ..\n\n[Image: Environments List | https://interview.in28minutes.com/img/cloud-and-devops/environments-list.jpg]\n\nContinuous Deployment vs Continuous Delivery\n\n• Continuous Delivery: Code is automatically tested & staged. A release manager clicks “Deploy” to go live.\n• Continuous Deployment: Developer commits code → All tests pass → Goes live automatically\n• Key Difference:\n  ◦ Manual Gate: Continuous Delivery has it, Continuous Deployment doesn’t\n  ◦ Risk: CD (Deployment) needs higher confidence in automated testing and monitoring",
+      "codeBlocks" : [ ]
+    }, {
+      "question" : "What is Infrastructure as Code?",
+      "answer" : "• Scenario: Imagine manually setting up VPCs, subnets, virtual machines, databases for Dev, QA, Staging, and Prod. It is time-consuming and error-prone.\n• IaC: Automate infrastructure setup using code\n\n[Image: Environments | https://interview.in28minutes.com/img/cloud-and-devops/environments.jpg]\n\nWhat is Infrastructure as Code?\n\n• Definition: Use code to define and manage cloud infrastructure\n• Goal: Automate provisioning and configuration of resources\n• Benefits:\n  ◦ Fewer manual errors\n  ◦ Faster deployments\n  ◦ Consistency across environments\n  ◦ Version-controlled changes\n\n[Image: Infrastructure as Code | https://interview.in28minutes.com/img/cloud-and-devops/infrastructure-as-code.jpg]\n\nTwo Parts of Infrastructure as Code\n\n• 1. Infrastructure Provisioning: Create cloud resources like VMs, storage, databases, networks (Tools: Terraform, Pulumi, ..)\n• 2. Configuration Management: Install software, packages, and runtime settings on provisioned resources (Tools: Ansible, Chef, Puppet, ..)\n• IaC = Provisioning + Configuration\n• Automate everything – from servers to software\n• Repeatable and scalable infrastructure – just like code\n\nTreat Infrastructure Like Code\n\n• Store in Git: Just like application code\n• Test and Review: Before deploying\n\nCloud Managed Services for Infrastructure as Code\n\n• AWS: AWS CloudFormation, AWS CDK, OpsWorks (Cloud based Chef, Puppet)\n• Azure: ARM Templates, Bicep\n• Google Cloud: Deployment Manager, Terraform (first-class support)",
+      "codeBlocks" : [ ]
+    }, {
+      "question" : "What is Standardization? How do containers and container orchestration help achieve it?",
+      "answer" : "What is Standardization?\n\n• Scenario: Imagine a scenario where you are using different processes for different applications built in different programming languages? Can we create a consistent process for all apps?\n  ◦ Can we have same process across different infrastructure as well? Can we create consistent process irrespective of where I'm deploying in local or on-premises or in the cloud?\n• Standardization: Enabling uniform processes and tools for different types of applications across environments and infrastructure types!\n\n[Image: Traditional deployment | https://interview.in28minutes.com/img/docker/traditional-deployment.png]\n\nHow Containers Enable Standardization\n\n• Self-Contained Units: Containers package the app + dependencies + config together (Contain everything that an application needs to run!)\n• Same Image Everywhere: Dev, QA, Prod – run the same container\n\nExample: Containers Enable Standardization\n\n• You build a Java app with specific versions of Java + libraries\n• Package it in a Docker Container Image\n• Run the exact same container image on your laptop, test server, and cloud\n• Result: Works the same everywhere → standardized deployment\n• What's more: You can use the same process for Python or NodeJs Applications as well. Build a container image and deploy where ever you want.\n\nWhat is Container Orchestration?\n\n• Scenario: You have dozens of containers running your app – across multiple servers. How do you scale them automatically? How do you find out if one of the containers is failing?\n• Kubernetes: An open-source platform that orchestrates (manages) containers – it automates deployment, scaling, and healing of containerized applications.\n\n[Image: Container Orchestration | https://interview.in28minutes.com/img/cloud-and-devops/multiple-containers.jpg]\n\nYou can Request Kubernetes using a Declarative Approach\n\n• Run 10 instances of MicroserviceA V1 image all the time\n  ◦ Deployment and Scaling: Kubernetes will deploy 10 containers\n  ◦ Healing: Restarts crashed containers\n  ◦ AutoScaling: You can increase and decrease instances automatically\n• Run Any Container Image: Belonging to apps built in any programming language\n• Run Anywhere: Works on local, on-prem, and all major clouds",
+      "codeBlocks" : [ ]
+    }, {
+      "question" : "What is Observability?",
+      "answer" : "Why Observability?\n\n• Scenario: Your app is running slowly or returning errors. But you do not know where or why!\n• Observability: The ability to understand what is happening inside your system just by looking at external outputs like logs, metrics, and traces\n\n[Image: Observability | https://interview.in28minutes.com/img/cloud-and-devops/observability.jpg]\n\n3 Pillars of Observability\n\n1. Logs\n\n• What They Are: Text records of events (e.g., errors, warnings)\n• Use: Helps answer what happened\n• Example: “PaymentService failed: connection timeout”\n\n2. Metrics\n\n• What They Are: Numeric values tracked over time\n• Use: Helps answer how is the system performing\n• Example: “CPU usage = 80%”, “Latency = 220ms”\n\n3. Traces\n\n• What They Are: The journey of a request through multiple services\n• Use: Helps answer where is the slowdown or failure\n• Example: Trace shows 2.5s delay in OrderService during checkout\n\nObservability vs Monitoring\n\n• Monitoring = Alerts for known issues\n• Observability = Deep visibility to explore unknown issues\n\nWhy OpenTelemetry?\n\n• Challenge: Different tools and formats for each pillar\n• Solution: One standard for collecting telemetry (logs, metrics, and traces)\n• OpenTelemetry:\n  ◦ Open-source, cloud-neutral project under CNCF\n  ◦ Collects logs, metrics, and traces using standard APIs and SDKs\n  ◦ Supported across different cloud platforms and almost all programming languages\n• Popular Observability Tools Integrating with OpenTelemetry:\n  ◦ Metrics: Prometheus, Grafana (visualization), Amazon CloudWatch (AWS), Azure Monitor, Google Cloud Monitoring\n  ◦ Logging: ELK Stack (Elasticsearch, Logstash, Kibana), Amazon CloudWatch Logs, Azure Log Analytics, Google Cloud Logging\n  ◦ Tracing: Jaeger, Zipkin, Grafana Tempo, AWS X-Ray, Azure Application Insights, Google Cloud Trace",
+      "codeBlocks" : [ ]
+    }, {
+      "question" : "Can DevOps Be Done Without Cloud?",
+      "answer" : "[Image: DevOps | https://interview.in28minutes.com/img/cloud-and-devops/devops.jpg]\n\nCan DevOps Be Done Without Cloud?\n\n• Yes – DevOps is Cloud-Friendly, Not Cloud-Dependent: DevOps is a culture + process, not tied to where your infrastructure runs. You can do DevOps with or without cloud.\n\n[Image: Cloud | https://interview.in28minutes.com/img/cloud-and-devops/cloud.jpg]\n\nDevOps Without Cloud is Possible\n\n• On-Premises Servers: Use your own data centers\n• Same Practices: CI/CD, monitoring, IaC – still apply\n• Same Tools: Jenkins, Git, Docker, Terraform work on-prem too\n• DevOps ≠ Cloud: You can adopt DevOps on-prem or hybrid\n• HOWEVER Cloud Supercharges DevOps: Easier infra + more automation\n\nCloud Makes DevOps Easy\n\n• On-Demand Infrastructure: Dev teams get servers instantly\n• CI/CD Pipelines: Implement CI/CD using cloud services\n• IaC (Infrastructure as Code): Create/manage cloud resources with code\n• Observability: Observability through cloud services",
+      "codeBlocks" : [ ]
+    } ]
+  }, {
+    "title" : "DevOps Interview - Diagrams",
+    "slug" : "devops-interview-diagrams",
+    "url" : "https://interview.in28minutes.com/interview-guides/devops/devops-interview-diagrams/",
+    "questionAnswers" : [ {
+      "question" : "Cloud",
+      "answer" : "[Image: Cloud | https://interview.in28minutes.com/img/cloud-and-devops/cloud.jpg]",
+      "codeBlocks" : [ ]
+    }, {
+      "question" : "Elasticity",
+      "answer" : "[Image: Elasticity | https://interview.in28minutes.com/img/cloud-and-devops/elasticity.jpg]",
+      "codeBlocks" : [ ]
+    }, {
+      "question" : "DevOps",
+      "answer" : "[Image: DevOps | https://interview.in28minutes.com/img/cloud-and-devops/devops.jpg]",
+      "codeBlocks" : [ ]
+    }, {
+      "question" : "Cloud Services",
+      "answer" : "[Image: cloud services | https://interview.in28minutes.com/img/cloud-and-devops/cloud-services.jpg]",
+      "codeBlocks" : [ ]
+    }, {
+      "question" : "Cloud Environment",
+      "answer" : "[Image: cloud environment | https://interview.in28minutes.com/img/cloud-and-devops/cloud-environment.jpg]",
+      "codeBlocks" : [ ]
+    }, {
+      "question" : "Multiple Environments",
+      "answer" : "[Image: environments | https://interview.in28minutes.com/img/cloud-and-devops/environments.jpg]",
+      "codeBlocks" : [ ]
+    }, {
+      "question" : "Continuous Delivery/Deployment",
+      "answer" : "[Image: continuous deployment | https://interview.in28minutes.com/img/cloud-and-devops/continuous-deployment.jpg]",
+      "codeBlocks" : [ ]
+    }, {
+      "question" : "Continous Integration",
+      "answer" : "[Image: continuous integration | https://interview.in28minutes.com/img/cloud-and-devops/continuous-integration.jpg]",
+      "codeBlocks" : [ ]
+    }, {
+      "question" : "Hybrid Cloud",
+      "answer" : "[Image: Hybrid Cloud | https://interview.in28minutes.com/img/cloud-and-devops/hybrid-cloud.jpg]",
+      "codeBlocks" : [ ]
+    }, {
+      "question" : "Container Orchestration",
+      "answer" : "[Image: Container Orchestration | https://interview.in28minutes.com/img/cloud-and-devops/multiple-containers.jpg]",
+      "codeBlocks" : [ ]
+    } ]
+  } ]
+}

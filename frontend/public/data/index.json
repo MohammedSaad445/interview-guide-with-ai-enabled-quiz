@@ -1,0 +1,43 @@
+[ {
+  "topicName" : "Java",
+  "slug" : "java",
+  "sectionCount" : 17,
+  "questionCount" : 215,
+  "pdfFile" : "Java_Interview_Guide.pdf"
+}, {
+  "topicName" : "DevOps",
+  "slug" : "devops",
+  "sectionCount" : 2,
+  "questionCount" : 17,
+  "pdfFile" : "DevOps_Interview_Guide.pdf"
+}, {
+  "topicName" : "Cloud",
+  "slug" : "cloud",
+  "sectionCount" : 8,
+  "questionCount" : 61,
+  "pdfFile" : "Cloud_Interview_Guide.pdf"
+}, {
+  "topicName" : "Docker",
+  "slug" : "docker",
+  "sectionCount" : 10,
+  "questionCount" : 78,
+  "pdfFile" : "Docker_Interview_Guide.pdf"
+}, {
+  "topicName" : "Kubernetes",
+  "slug" : "kubernetes",
+  "sectionCount" : 10,
+  "questionCount" : 109,
+  "pdfFile" : "Kubernetes_Interview_Guide.pdf"
+}, {
+  "topicName" : "Terraform",
+  "slug" : "terraform",
+  "sectionCount" : 5,
+  "questionCount" : 37,
+  "pdfFile" : "Terraform_Interview_Guide.pdf"
+}, {
+  "topicName" : "Git",
+  "slug" : "git",
+  "sectionCount" : 4,
+  "questionCount" : 35,
+  "pdfFile" : "Git_Interview_Guide.pdf"
+} ]

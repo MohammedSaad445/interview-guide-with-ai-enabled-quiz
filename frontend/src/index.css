@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased bg-gray-50 text-gray-800 dark:bg-gray-950 dark:text-gray-100;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  ::-webkit-scrollbar       { width: 7px; height: 7px; }
+  ::-webkit-scrollbar-track { @apply bg-gray-100 dark:bg-gray-800; }
+  ::-webkit-scrollbar-thumb { @apply bg-gray-300 dark:bg-gray-600 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-accent; }
+}
+
+@layer utilities {
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0);   }
+  }
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out forwards;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-accent text-white px-5 py-2.5 rounded-xl font-semibold
+           hover:bg-accent-light active:scale-95 transition-all duration-150 shadow-sm;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border-2 border-accent text-accent px-5 py-2.5 rounded-xl font-semibold
+           hover:bg-accent hover:text-white active:scale-95 transition-all duration-150;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-2xl shadow-card border border-gray-100 dark:border-gray-700
+           transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-card-hover hover:-translate-y-0.5;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold;
+  }
+
+  .section-heading {
+    @apply text-2xl font-bold text-gray-900 dark:text-white;
+  }
+
+  .page-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+

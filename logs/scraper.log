@@ -1,0 +1,185 @@
+2026-06-26 15:42:31.310 [main] INFO  dev.saad.webscraper.Main - In28Minutes Interview Guide Scraper starting...
+2026-06-26 15:42:31.312 [main] INFO  dev.saad.webscraper.Main - Phase 1: Web scraping initiated.
+2026-06-26 15:42:31.524 [main] INFO  d.saad.webscraper.scraper.WebScraper - SSL trust-all installed (scraper mode).
+2026-06-26 15:42:31.525 [main] INFO  d.saad.webscraper.scraper.WebScraper - ===== Starting scrape for 7 topic(s) =====
+2026-06-26 15:42:31.529 [main] INFO  d.saad.webscraper.scraper.WebScraper - ---------- Topic: Java → https://interview.in28minutes.com/java/
+2026-06-26 15:42:35.247 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Java Platform' (https://interview.in28minutes.com/interview-guides/java/java-platform/)
+2026-06-26 15:42:38.253 [main] INFO  d.saad.webscraper.scraper.WebScraper -      19 Q&A pair(s) extracted.
+2026-06-26 15:42:38.253 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Java Landscape' (https://interview.in28minutes.com/interview-guides/java/java-landscape/)
+2026-06-26 15:42:41.001 [main] INFO  d.saad.webscraper.scraper.WebScraper -      12 Q&A pair(s) extracted.
+2026-06-26 15:42:41.002 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Java Memory Management' (https://interview.in28minutes.com/interview-guides/java/java-memory-management/)
+2026-06-26 15:42:44.115 [main] INFO  d.saad.webscraper.scraper.WebScraper -      13 Q&A pair(s) extracted.
+2026-06-26 15:42:44.117 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Java Object Oriented Programming Concepts' (https://interview.in28minutes.com/interview-guides/java/java-object-oriented-programming-concepts/)
+2026-06-26 15:42:47.699 [main] INFO  d.saad.webscraper.scraper.WebScraper -      24 Q&A pair(s) extracted.
+2026-06-26 15:42:47.700 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Java Object Oriented Programming Details' (https://interview.in28minutes.com/interview-guides/java/java-object-oriented-programming-details/)
+2026-06-26 15:42:50.919 [main] INFO  d.saad.webscraper.scraper.WebScraper -      14 Q&A pair(s) extracted.
+2026-06-26 15:42:50.920 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Core Java in Depth' (https://interview.in28minutes.com/interview-guides/java/core-java-in-depth/)
+2026-06-26 15:42:54.381 [main] INFO  d.saad.webscraper.scraper.WebScraper -      17 Q&A pair(s) extracted.
+2026-06-26 15:42:54.382 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Functional Programming in Java' (https://interview.in28minutes.com/interview-guides/java/functional-programming-in-java/)
+2026-06-26 15:42:57.549 [main] INFO  d.saad.webscraper.scraper.WebScraper -      16 Q&A pair(s) extracted.
+2026-06-26 15:42:57.551 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Threads and Concurrency in Java' (https://interview.in28minutes.com/interview-guides/java/threads-and-concurrency-in-java/)
+2026-06-26 15:43:00.767 [main] INFO  d.saad.webscraper.scraper.WebScraper -      21 Q&A pair(s) extracted.
+2026-06-26 15:43:00.768 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Collections in Java' (https://interview.in28minutes.com/interview-guides/java/collections-in-java/)
+2026-06-26 15:43:04.045 [main] INFO  d.saad.webscraper.scraper.WebScraper -      22 Q&A pair(s) extracted.
+2026-06-26 15:43:04.046 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Generics in Java' (https://interview.in28minutes.com/interview-guides/java/generics-in-java/)
+2026-06-26 15:43:07.421 [main] INFO  d.saad.webscraper.scraper.WebScraper -      5 Q&A pair(s) extracted.
+2026-06-26 15:43:07.423 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Modifiers in Java' (https://interview.in28minutes.com/interview-guides/java/modifiers-in-java/)
+2026-06-26 15:43:10.707 [main] INFO  d.saad.webscraper.scraper.WebScraper -      5 Q&A pair(s) extracted.
+2026-06-26 15:43:10.707 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Exception Handling in Java' (https://interview.in28minutes.com/interview-guides/java/exception-handling-in-java/)
+2026-06-26 15:43:14.197 [main] INFO  d.saad.webscraper.scraper.WebScraper -      10 Q&A pair(s) extracted.
+2026-06-26 15:43:14.197 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Serialization in Java' (https://interview.in28minutes.com/interview-guides/java/serialization-in-java/)
+2026-06-26 15:43:17.319 [main] INFO  d.saad.webscraper.scraper.WebScraper -      7 Q&A pair(s) extracted.
+2026-06-26 15:43:17.319 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Built-in Classes in Java' (https://interview.in28minutes.com/interview-guides/java/built-in-classes-in-java/)
+2026-06-26 15:43:20.787 [main] INFO  d.saad.webscraper.scraper.WebScraper -      9 Q&A pair(s) extracted.
+2026-06-26 15:43:20.787 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Miscellaneous Topics in Java' (https://interview.in28minutes.com/interview-guides/java/miscellaneous-topics-in-java/)
+2026-06-26 15:43:24.453 [main] INFO  d.saad.webscraper.scraper.WebScraper -      11 Q&A pair(s) extracted.
+2026-06-26 15:43:24.453 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'New Features in Java' (https://interview.in28minutes.com/interview-guides/java/new-features-in-java/)
+2026-06-26 15:43:27.569 [main] INFO  d.saad.webscraper.scraper.WebScraper -      3 Q&A pair(s) extracted.
+2026-06-26 15:43:27.570 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Java Interview - Diagrams' (https://interview.in28minutes.com/interview-guides/java/java-interview-diagrams/)
+2026-06-26 15:43:30.504 [main] INFO  d.saad.webscraper.scraper.WebScraper -      7 Q&A pair(s) extracted.
+2026-06-26 15:43:30.505 [main] INFO  d.saad.webscraper.scraper.WebScraper - Topic 'Java' complete → 17 section(s).
+2026-06-26 15:43:30.505 [main] INFO  d.saad.webscraper.scraper.WebScraper - ---------- Topic: DevOps → https://interview.in28minutes.com/devops/
+2026-06-26 15:43:33.547 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'DevOps Fundamentals' (https://interview.in28minutes.com/interview-guides/devops/devops-fundamentals/)
+2026-06-26 15:43:36.505 [main] INFO  d.saad.webscraper.scraper.WebScraper -      7 Q&A pair(s) extracted.
+2026-06-26 15:43:36.506 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'DevOps Interview - Diagrams' (https://interview.in28minutes.com/interview-guides/devops/devops-interview-diagrams/)
+2026-06-26 15:43:39.428 [main] INFO  d.saad.webscraper.scraper.WebScraper -      10 Q&A pair(s) extracted.
+2026-06-26 15:43:39.428 [main] INFO  d.saad.webscraper.scraper.WebScraper - Topic 'DevOps' complete → 2 section(s).
+2026-06-26 15:43:39.430 [main] INFO  d.saad.webscraper.scraper.WebScraper - ---------- Topic: Cloud → https://interview.in28minutes.com/cloud/
+2026-06-26 15:43:42.536 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Cloud Fundamentals' (https://interview.in28minutes.com/interview-guides/cloud/cloud-fundamentals/)
+2026-06-26 15:43:45.865 [main] INFO  d.saad.webscraper.scraper.WebScraper -      8 Q&A pair(s) extracted.
+2026-06-26 15:43:45.866 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Cloud Storage and Databases Fundamentals' (https://interview.in28minutes.com/interview-guides/cloud/cloud-storage-and-databases-fundamentals/)
+2026-06-26 15:43:48.862 [main] INFO  d.saad.webscraper.scraper.WebScraper -      12 Q&A pair(s) extracted.
+2026-06-26 15:43:48.862 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Asynchronous Communication in the Cloud' (https://interview.in28minutes.com/interview-guides/cloud/asynchronous-communication-in-the-cloud/)
+2026-06-26 15:43:51.975 [main] INFO  d.saad.webscraper.scraper.WebScraper -      6 Q&A pair(s) extracted.
+2026-06-26 15:43:51.976 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Networking in the Cloud' (https://interview.in28minutes.com/interview-guides/cloud/networking-in-the-cloud/)
+2026-06-26 15:43:55.132 [main] INFO  d.saad.webscraper.scraper.WebScraper -      7 Q&A pair(s) extracted.
+2026-06-26 15:43:55.133 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Cost Management in the Cloud' (https://interview.in28minutes.com/interview-guides/cloud/cost-management-in-the-cloud/)
+2026-06-26 15:43:58.095 [main] INFO  d.saad.webscraper.scraper.WebScraper -      6 Q&A pair(s) extracted.
+2026-06-26 15:43:58.096 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'AI, ML and Generative AI in the Cloud' (https://interview.in28minutes.com/interview-guides/cloud/ai-ml-and-generative-ai-in-the-cloud/)
+2026-06-26 15:44:01.101 [main] INFO  d.saad.webscraper.scraper.WebScraper -      5 Q&A pair(s) extracted.
+2026-06-26 15:44:01.102 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Security in the Cloud' (https://interview.in28minutes.com/interview-guides/cloud/security-in-the-cloud/)
+2026-06-26 15:44:04.228 [main] INFO  d.saad.webscraper.scraper.WebScraper -      7 Q&A pair(s) extracted.
+2026-06-26 15:44:04.228 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Cloud Interview - Diagrams' (https://interview.in28minutes.com/interview-guides/cloud/cloud-interview-diagrams/)
+2026-06-26 15:44:07.358 [main] INFO  d.saad.webscraper.scraper.WebScraper -      10 Q&A pair(s) extracted.
+2026-06-26 15:44:07.359 [main] INFO  d.saad.webscraper.scraper.WebScraper - Topic 'Cloud' complete → 8 section(s).
+2026-06-26 15:44:07.359 [main] INFO  d.saad.webscraper.scraper.WebScraper - ---------- Topic: Docker → https://interview.in28minutes.com/docker/
+2026-06-26 15:44:10.409 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Docker Fundamentals' (https://interview.in28minutes.com/interview-guides/docker/docker-fundamentals/)
+2026-06-26 15:44:13.532 [main] INFO  d.saad.webscraper.scraper.WebScraper -      6 Q&A pair(s) extracted.
+2026-06-26 15:44:13.532 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Building Docker Images' (https://interview.in28minutes.com/interview-guides/docker/building-docker-images/)
+2026-06-26 15:44:16.559 [main] INFO  d.saad.webscraper.scraper.WebScraper -      13 Q&A pair(s) extracted.
+2026-06-26 15:44:16.560 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Managing Docker Containers' (https://interview.in28minutes.com/interview-guides/docker/managing-docker-containers/)
+2026-06-26 15:44:19.648 [main] INFO  d.saad.webscraper.scraper.WebScraper -      5 Q&A pair(s) extracted.
+2026-06-26 15:44:19.648 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Persisting Data in Docker' (https://interview.in28minutes.com/interview-guides/docker/persisting-data-in-docker/)
+2026-06-26 15:44:22.607 [main] INFO  d.saad.webscraper.scraper.WebScraper -      8 Q&A pair(s) extracted.
+2026-06-26 15:44:22.607 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Docker Networking' (https://interview.in28minutes.com/interview-guides/docker/docker-networking/)
+2026-06-26 15:44:25.707 [main] INFO  d.saad.webscraper.scraper.WebScraper -      7 Q&A pair(s) extracted.
+2026-06-26 15:44:25.707 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Docker Security' (https://interview.in28minutes.com/interview-guides/docker/docker-security/)
+2026-06-26 15:44:29.002 [main] INFO  d.saad.webscraper.scraper.WebScraper -      9 Q&A pair(s) extracted.
+2026-06-26 15:44:29.003 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Docker Compose' (https://interview.in28minutes.com/interview-guides/docker/docker-compose/)
+2026-06-26 15:44:32.119 [main] INFO  d.saad.webscraper.scraper.WebScraper -      6 Q&A pair(s) extracted.
+2026-06-26 15:44:32.120 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Advanced Docker Concepts' (https://interview.in28minutes.com/interview-guides/docker/advanced-docker-concepts/)
+2026-06-26 15:44:35.261 [main] INFO  d.saad.webscraper.scraper.WebScraper -      5 Q&A pair(s) extracted.
+2026-06-26 15:44:35.261 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Docker Cheat Sheet' (https://interview.in28minutes.com/interview-guides/docker/docker-cheat-sheet/)
+2026-06-26 15:44:38.496 [main] INFO  d.saad.webscraper.scraper.WebScraper -      9 Q&A pair(s) extracted.
+2026-06-26 15:44:38.497 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Docker Interview - Diagrams' (https://interview.in28minutes.com/interview-guides/docker/docker-interview-diagrams/)
+2026-06-26 15:44:41.625 [main] INFO  d.saad.webscraper.scraper.WebScraper -      10 Q&A pair(s) extracted.
+2026-06-26 15:44:41.626 [main] INFO  d.saad.webscraper.scraper.WebScraper - Topic 'Docker' complete → 10 section(s).
+2026-06-26 15:44:41.626 [main] INFO  d.saad.webscraper.scraper.WebScraper - ---------- Topic: Kubernetes → https://interview.in28minutes.com/kubernetes/
+2026-06-26 15:44:44.593 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Kubernetes Landscape' (https://interview.in28minutes.com/interview-guides/kubernetes/kubernetes-landscape/)
+2026-06-26 15:44:47.614 [main] INFO  d.saad.webscraper.scraper.WebScraper -      6 Q&A pair(s) extracted.
+2026-06-26 15:44:47.615 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Kubernetes Fundamentals' (https://interview.in28minutes.com/interview-guides/kubernetes/kubernetes-fundamentals/)
+2026-06-26 15:44:50.778 [main] INFO  d.saad.webscraper.scraper.WebScraper -      6 Q&A pair(s) extracted.
+2026-06-26 15:44:50.779 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Kubernetes Services and Networking' (https://interview.in28minutes.com/interview-guides/kubernetes/kubernetes-services-and-networking/)
+2026-06-26 15:44:53.913 [main] INFO  d.saad.webscraper.scraper.WebScraper -      9 Q&A pair(s) extracted.
+2026-06-26 15:44:53.913 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'More Kubernetes Fundamentals' (https://interview.in28minutes.com/interview-guides/kubernetes/more-kubernetes-fundamentals/)
+2026-06-26 15:44:56.954 [main] INFO  d.saad.webscraper.scraper.WebScraper -      18 Q&A pair(s) extracted.
+2026-06-26 15:44:56.956 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Kubernetes Storage' (https://interview.in28minutes.com/interview-guides/kubernetes/kubernetes-storage/)
+2026-06-26 15:45:00.191 [main] INFO  d.saad.webscraper.scraper.WebScraper -      11 Q&A pair(s) extracted.
+2026-06-26 15:45:00.192 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Kubernetes Security' (https://interview.in28minutes.com/interview-guides/kubernetes/kubernetes-security/)
+2026-06-26 15:45:03.380 [main] INFO  d.saad.webscraper.scraper.WebScraper -      10 Q&A pair(s) extracted.
+2026-06-26 15:45:03.380 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Kubernetes Scheduling' (https://interview.in28minutes.com/interview-guides/kubernetes/kubernetes-scheduling/)
+2026-06-26 15:45:06.206 [main] INFO  d.saad.webscraper.scraper.WebScraper -      13 Q&A pair(s) extracted.
+2026-06-26 15:45:06.207 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Kubernetes Observability' (https://interview.in28minutes.com/interview-guides/kubernetes/kubernetes-observability/)
+2026-06-26 15:45:09.326 [main] INFO  d.saad.webscraper.scraper.WebScraper -      9 Q&A pair(s) extracted.
+2026-06-26 15:45:09.327 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'More Kubernetes Essentials' (https://interview.in28minutes.com/interview-guides/kubernetes/more-kubernetes-essentials/)
+2026-06-26 15:45:12.564 [main] INFO  d.saad.webscraper.scraper.WebScraper -      11 Q&A pair(s) extracted.
+2026-06-26 15:45:12.565 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Kubernetes Interview - Diagrams' (https://interview.in28minutes.com/interview-guides/kubernetes/kubernetes-interview-diagrams/)
+2026-06-26 15:45:15.583 [main] INFO  d.saad.webscraper.scraper.WebScraper -      16 Q&A pair(s) extracted.
+2026-06-26 15:45:15.583 [main] INFO  d.saad.webscraper.scraper.WebScraper - Topic 'Kubernetes' complete → 10 section(s).
+2026-06-26 15:45:15.584 [main] INFO  d.saad.webscraper.scraper.WebScraper - ---------- Topic: Terraform → https://interview.in28minutes.com/terraform/
+2026-06-26 15:45:18.625 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Introduction to Terraform' (https://interview.in28minutes.com/interview-guides/terraform/introduction-to-terraform/)
+2026-06-26 15:45:21.627 [main] INFO  d.saad.webscraper.scraper.WebScraper -      9 Q&A pair(s) extracted.
+2026-06-26 15:45:21.628 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Terraform Language - HCL' (https://interview.in28minutes.com/interview-guides/terraform/terraform-language-hcl/)
+2026-06-26 15:45:24.802 [main] INFO  d.saad.webscraper.scraper.WebScraper -      8 Q&A pair(s) extracted.
+2026-06-26 15:45:24.803 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Terraform State Management' (https://interview.in28minutes.com/interview-guides/terraform/terraform-state-management/)
+2026-06-26 15:45:27.920 [main] INFO  d.saad.webscraper.scraper.WebScraper -      8 Q&A pair(s) extracted.
+2026-06-26 15:45:27.921 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Terraform Best Practices' (https://interview.in28minutes.com/interview-guides/terraform/terraform-best-practices/)
+2026-06-26 15:45:30.878 [main] INFO  d.saad.webscraper.scraper.WebScraper -      8 Q&A pair(s) extracted.
+2026-06-26 15:45:30.880 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Terraform Interview - Diagrams' (https://interview.in28minutes.com/interview-guides/terraform/terraform-interview-diagrams/)
+2026-06-26 15:45:34.180 [main] INFO  d.saad.webscraper.scraper.WebScraper -      4 Q&A pair(s) extracted.
+2026-06-26 15:45:34.180 [main] INFO  d.saad.webscraper.scraper.WebScraper - Topic 'Terraform' complete → 5 section(s).
+2026-06-26 15:45:34.180 [main] INFO  d.saad.webscraper.scraper.WebScraper - ---------- Topic: Git → https://interview.in28minutes.com/git/
+2026-06-26 15:45:37.095 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Introduction to Git' (https://interview.in28minutes.com/interview-guides/git/introduction-to-git/)
+2026-06-26 15:45:40.055 [main] INFO  d.saad.webscraper.scraper.WebScraper -      10 Q&A pair(s) extracted.
+2026-06-26 15:45:40.056 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Git Branching' (https://interview.in28minutes.com/interview-guides/git/git-branching/)
+2026-06-26 15:45:43.317 [main] INFO  d.saad.webscraper.scraper.WebScraper -      7 Q&A pair(s) extracted.
+2026-06-26 15:45:43.317 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Git - Other Features You Need To Know' (https://interview.in28minutes.com/interview-guides/git/git-other-features-you-need-to-know/)
+2026-06-26 15:45:46.331 [main] INFO  d.saad.webscraper.scraper.WebScraper -      9 Q&A pair(s) extracted.
+2026-06-26 15:45:46.331 [main] INFO  d.saad.webscraper.scraper.WebScraper -   → Section: 'Git Interview - Diagrams' (https://interview.in28minutes.com/interview-guides/git/git-interview-diagrams/)
+2026-06-26 15:45:49.448 [main] INFO  d.saad.webscraper.scraper.WebScraper -      9 Q&A pair(s) extracted.
+2026-06-26 15:45:49.448 [main] INFO  d.saad.webscraper.scraper.WebScraper - Topic 'Git' complete → 4 section(s).
+2026-06-26 15:45:49.448 [main] INFO  d.saad.webscraper.scraper.WebScraper - ===== Done. 7 book(s) populated. =====
+2026-06-26 15:45:49.448 [main] INFO  dev.saad.webscraper.Main - Phase 1 complete. 7 topic(s) scraped successfully:
+2026-06-26 15:45:49.449 [main] INFO  dev.saad.webscraper.Main -   • Java → 17 section(s)
+2026-06-26 15:45:49.449 [main] INFO  dev.saad.webscraper.Main -   • DevOps → 2 section(s)
+2026-06-26 15:45:49.449 [main] INFO  dev.saad.webscraper.Main -   • Cloud → 8 section(s)
+2026-06-26 15:45:49.449 [main] INFO  dev.saad.webscraper.Main -   • Docker → 10 section(s)
+2026-06-26 15:45:49.449 [main] INFO  dev.saad.webscraper.Main -   • Kubernetes → 10 section(s)
+2026-06-26 15:45:49.449 [main] INFO  dev.saad.webscraper.Main -   • Terraform → 5 section(s)
+2026-06-26 15:45:49.450 [main] INFO  dev.saad.webscraper.Main -   • Git → 4 section(s)
+2026-06-26 15:45:49.450 [main] INFO  dev.saad.webscraper.Main - Phase 2: PDF generation initiated.
+2026-06-26 15:45:49.629 [main] INFO  d.saad.webscraper.pdf.PdfGenerator - ===== PDF generation: 7 book(s) =====
+2026-06-26 15:45:49.630 [main] INFO  d.saad.webscraper.pdf.PdfGenerator - Generating: Java_Interview_Guide.pdf
+2026-06-26 15:45:50.600 [main] INFO  d.saad.webscraper.pdf.PdfGenerator -   Written: Java_Interview_Guide.pdf (592 KB)
+2026-06-26 15:45:50.600 [main] INFO  d.saad.webscraper.pdf.PdfGenerator - Generating: DevOps_Interview_Guide.pdf
+2026-06-26 15:45:58.338 [main] INFO  d.saad.webscraper.pdf.PdfGenerator -   Written: DevOps_Interview_Guide.pdf (1618 KB)
+2026-06-26 15:45:58.339 [main] INFO  d.saad.webscraper.pdf.PdfGenerator - Generating: Cloud_Interview_Guide.pdf
+2026-06-26 15:46:32.733 [main] INFO  d.saad.webscraper.pdf.PdfGenerator -   Written: Cloud_Interview_Guide.pdf (5493 KB)
+2026-06-26 15:46:32.734 [main] INFO  d.saad.webscraper.pdf.PdfGenerator - Generating: Docker_Interview_Guide.pdf
+2026-06-26 15:46:40.636 [main] INFO  d.saad.webscraper.pdf.PdfGenerator -   Written: Docker_Interview_Guide.pdf (1723 KB)
+2026-06-26 15:46:40.636 [main] INFO  d.saad.webscraper.pdf.PdfGenerator - Generating: Kubernetes_Interview_Guide.pdf
+2026-06-26 15:46:50.924 [main] INFO  d.saad.webscraper.pdf.PdfGenerator -   Written: Kubernetes_Interview_Guide.pdf (5080 KB)
+2026-06-26 15:46:50.925 [main] INFO  d.saad.webscraper.pdf.PdfGenerator - Generating: Terraform_Interview_Guide.pdf
+2026-06-26 15:46:53.874 [main] INFO  d.saad.webscraper.pdf.PdfGenerator -   Written: Terraform_Interview_Guide.pdf (594 KB)
+2026-06-26 15:46:53.874 [main] INFO  d.saad.webscraper.pdf.PdfGenerator - Generating: Git_Interview_Guide.pdf
+2026-06-26 15:46:55.652 [main] INFO  d.saad.webscraper.pdf.PdfGenerator -   Written: Git_Interview_Guide.pdf (448 KB)
+2026-06-26 15:46:55.652 [main] INFO  d.saad.webscraper.pdf.PdfGenerator - ===== Done. 7/7 PDF(s) in 'C:\Users\mmohamm1\OneDrive - Capgemini\Desktop\InterviewGuide\output' =====
+2026-06-26 15:46:55.653 [main] INFO  dev.saad.webscraper.Main - Phase 3: JSON export for React website initiated.
+2026-06-26 15:46:56.088 [main] INFO  d.saad.webscraper.json.JsonExporter -   [JSON] Exported: java.json
+2026-06-26 15:46:56.100 [main] INFO  d.saad.webscraper.json.JsonExporter -   [PDF]  Copied: Java_Interview_Guide.pdf
+2026-06-26 15:46:56.105 [main] INFO  d.saad.webscraper.json.JsonExporter -   [JSON] Exported: devops.json
+2026-06-26 15:46:56.111 [main] INFO  d.saad.webscraper.json.JsonExporter -   [PDF]  Copied: DevOps_Interview_Guide.pdf
+2026-06-26 15:46:56.118 [main] INFO  d.saad.webscraper.json.JsonExporter -   [JSON] Exported: cloud.json
+2026-06-26 15:46:56.126 [main] INFO  d.saad.webscraper.json.JsonExporter -   [PDF]  Copied: Cloud_Interview_Guide.pdf
+2026-06-26 15:46:56.133 [main] INFO  d.saad.webscraper.json.JsonExporter -   [JSON] Exported: docker.json
+2026-06-26 15:46:56.138 [main] INFO  d.saad.webscraper.json.JsonExporter -   [PDF]  Copied: Docker_Interview_Guide.pdf
+2026-06-26 15:46:56.146 [main] INFO  d.saad.webscraper.json.JsonExporter -   [JSON] Exported: kubernetes.json
+2026-06-26 15:46:56.151 [main] INFO  d.saad.webscraper.json.JsonExporter -   [PDF]  Copied: Kubernetes_Interview_Guide.pdf
+2026-06-26 15:46:56.156 [main] INFO  d.saad.webscraper.json.JsonExporter -   [JSON] Exported: terraform.json
+2026-06-26 15:46:56.161 [main] INFO  d.saad.webscraper.json.JsonExporter -   [PDF]  Copied: Terraform_Interview_Guide.pdf
+2026-06-26 15:46:56.166 [main] INFO  d.saad.webscraper.json.JsonExporter -   [JSON] Exported: git.json
+2026-06-26 15:46:56.170 [main] INFO  d.saad.webscraper.json.JsonExporter -   [PDF]  Copied: Git_Interview_Guide.pdf
+2026-06-26 15:46:56.174 [main] INFO  d.saad.webscraper.json.JsonExporter -   [JSON] index.json written (7 entries).
+2026-06-26 15:46:56.174 [main] INFO  dev.saad.webscraper.Main - Phase 3 complete. Data written to frontend/public/data/
+2026-06-26 15:46:56.174 [main] INFO  dev.saad.webscraper.Main - =========================================================
+2026-06-26 15:46:56.174 [main] INFO  dev.saad.webscraper.Main -   All done!  Elapsed time: 264s
+2026-06-26 15:46:56.174 [main] INFO  dev.saad.webscraper.Main -   Output directory: C:\Users\mmohamm1\OneDrive - Capgemini\Desktop\InterviewGuide\output
+2026-06-26 15:46:56.175 [main] INFO  dev.saad.webscraper.Main -   7 PDF file(s) generated:
+2026-06-26 15:46:56.176 [main] INFO  dev.saad.webscraper.Main -     → Cloud_Interview_Guide.pdf (5493 KB)
+2026-06-26 15:46:56.176 [main] INFO  dev.saad.webscraper.Main -     → DevOps_Interview_Guide.pdf (1618 KB)
+2026-06-26 15:46:56.176 [main] INFO  dev.saad.webscraper.Main -     → Docker_Interview_Guide.pdf (1723 KB)
+2026-06-26 15:46:56.176 [main] INFO  dev.saad.webscraper.Main -     → Git_Interview_Guide.pdf (448 KB)
+2026-06-26 15:46:56.176 [main] INFO  dev.saad.webscraper.Main -     → Java_Interview_Guide.pdf (592 KB)
+2026-06-26 15:46:56.176 [main] INFO  dev.saad.webscraper.Main -     → Kubernetes_Interview_Guide.pdf (5080 KB)
+2026-06-26 15:46:56.176 [main] INFO  dev.saad.webscraper.Main -     → Terraform_Interview_Guide.pdf (594 KB)
+2026-06-26 15:46:56.176 [main] INFO  dev.saad.webscraper.Main - =========================================================
