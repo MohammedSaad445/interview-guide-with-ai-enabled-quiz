@@ -22,7 +22,7 @@ import java.util.List;
  * <ol>
  *   <li>{@link DataLoaderService} samples up to N Q&amp;A pairs from the scraped JSON.</li>
  *   <li>A structured prompt is sent to GPT-4o asking it to generate quiz questions.</li>
- *   <li>Spring AI's {@code BeanOutputConverter} deserialises the JSON response directly
+ *   <li>Spring AI's {@code BeanOutputConverter} deserializes the JSON response directly
  *       into {@code List<QuizQuestion>}.</li>
  * </ol>
  *
@@ -81,7 +81,7 @@ public class QuizService {
 
         // Use content() to get raw text, then parse manually.
         // This avoids the Spring AI BeanOutputConverter silently returning null when
-        // GPT wraps its response in markdown code fences (```json ... ```).
+        // GPT wraps its response in Markdown code fences (```json ... ```).
         String raw = chatClient.prompt()
                 .system(systemPrompt)
                 .user(userPrompt)
@@ -95,7 +95,7 @@ public class QuizService {
         }
 
         String json = extractJson(raw);
-        List<QuizQuestion> questions = objectMapper.readValue(json, new TypeReference<List<QuizQuestion>>() {});
+        List<QuizQuestion> questions = objectMapper.readValue(json, new TypeReference<>() {});
 
         if (questions == null) {
             throw new IllegalStateException("AI response parsed to null – raw content was: " + raw);
@@ -225,12 +225,12 @@ public class QuizService {
     // =========================================================================
 
     /**
-     * Strips markdown code fences (e.g. {@code ```json ... ```} or {@code ``` ... ```})
+     * Strips Markdown code fences (e.g. {@code ```json ... ```} or {@code ``` ... ```})
      * and any leading/trailing whitespace from the raw AI response, returning only the
      * bare JSON string.
      *
      * <p>GPT-4o occasionally wraps its output in code fences despite being instructed
-     * not to.  This method normalises such output so that Jackson can always parse it.</p>
+     * not to.  This method normalizes such output so that Jackson can always parse it.</p>
      */
     private static String extractJson(String raw) {
         if (raw == null || raw.isBlank()) {
