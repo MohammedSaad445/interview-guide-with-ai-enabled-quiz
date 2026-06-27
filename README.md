@@ -10,7 +10,7 @@ A full-stack interview preparation platform with **AI-powered quizzes**, curated
 |---|---|
 | 📚 Topic Guides | Scraped Q&As across 7 technology topics |
 | 🔍 Search | Full-text search across all questions and answers |
-| 🧠 AI Quiz | GPT-4o powered quizzes — MCQ and free-text modes |
+| 🧠 AI Quiz | GPT powered quizzes — MCQ and free-text modes |
 | 📊 Score History | Session-scoped quiz history with average score tracker |
 | 🌙 Dark Mode | System-aware theme toggle |
 | 📥 PDF Downloads | Download complete interview guides as PDFs |
@@ -80,18 +80,18 @@ InterviewGuide/
 - Java 17+
 - Maven 3.8+
 - Node.js 20+ *(only needed for local frontend development; the Maven build downloads it automatically)*
-- An **OpenAI API key** with access to `gpt-4o`
+- An **Gemini API key** with access to `Gemini 2.5 Flash-lite`
 
 ---
 
-### Step 1 — Set your OpenAI API key
+### Step 1 — Set your Gemini API key
 
 Open `backend/quiz/src/main/resources/application.properties` and replace the placeholder:
 
 ```properties
-spring.ai.openai.api-key=sk-PASTE_YOUR_OPENAI_API_KEY_HERE
+spring.ai.google.genai.api-key=sk-PASTE_YOUR_OPENAI_API_KEY_HERE
 ```
-
+or set and enironment variable as "GEMINI_API_KEY" (Recommended)
 ---
 
 ### Step 2 — Run the Scraper (first time only)
@@ -197,10 +197,9 @@ Navigate to **Quiz** in the navbar or click **"🧠 Quiz this topic"** on any to
 All settings are in `backend/quiz/src/main/resources/application.properties`:
 
 ```properties
-# OpenAI
-spring.ai.openai.api-key=sk-...
-spring.ai.openai.chat.options.model=gpt-4o
-spring.ai.openai.chat.options.temperature=0.7
+# Gemini
+spring.ai.google.genai.chat.options.model=gemini-2.5-flash-lite
+spring.ai.google.genai.chat.options.temperature=0.7
 
 # Quiz behaviour
 quiz.context.max-questions-per-section=20   # Max Q&As sampled for AI context
