@@ -5,7 +5,7 @@ import QuizQuestion from '../components/QuizQuestion'
 import QuizResults  from '../components/QuizResults'
 import { generateQuiz } from '../api/quizApi'
 
-// ── Loading screen shown while GPT-4o generates questions ────────────────────
+// ── Loading screen shown while AI generates questions ────────────────────────
 function GeneratingSpinner() {
   return (
     <div className="min-h-[60vh] flex flex-col items-center justify-center px-4 py-20 text-center">
@@ -21,7 +21,7 @@ function GeneratingSpinner() {
         Generating your quiz…
       </h2>
       <p className="text-sm text-gray-500 dark:text-gray-400 max-w-xs leading-relaxed mb-6">
-        GPT-4o is crafting personalised questions based on your chosen topic and difficulty.
+        AI is crafting personalised questions based on your chosen topic and difficulty.
         This usually takes 5–15 seconds.
       </p>
       <div className="flex items-center gap-2">
@@ -31,7 +31,7 @@ function GeneratingSpinner() {
           <path className="opacity-75" fill="currentColor"
                 d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
         </svg>
-        <span className="text-sm text-accent font-semibold">Powered by Spring AI + GPT-4o</span>
+        <span className="text-sm text-accent font-semibold">AI is generating your quiz…</span>
       </div>
     </div>
   )
@@ -39,7 +39,7 @@ function GeneratingSpinner() {
 
 // ── Quiz page state machine ────────────────────────────────────────────────────
 //  'setup'    → user configures the quiz
-//  'loading'  → waiting for GPT-4o to generate questions
+//  'loading'  → waiting for AI to generate questions
 //  'quiz'     → answering questions one at a time
 //  'results'  → score summary + per-question review
 
