@@ -61,7 +61,7 @@ InterviewGuide/
             │   ├── QuizController.java   # POST /api/quiz/generate & /evaluate
             │   └── SpaController.java    # React Router SPA fallback
             ├── service/
-            │   ├── QuizService.java      # GPT-4o prompt orchestration
+            │   ├── QuizService.java      # Gemini prompt orchestration
             │   └── DataLoaderService.java # Loads + samples topic JSON context
             ├── model/
             │   ├── QuizRequest.java
@@ -154,9 +154,9 @@ Navigate to **Quiz** in the navbar or click **"🧠 Quiz this topic"** on any to
 
 ### How it works
 
-1. **Generate** — `DataLoaderService` samples up to 20 Q&A pairs from the scraped JSON and builds a compact context prompt. GPT-4o generates `n` quiz questions with key-point rubrics.
+1. **Generate** — `DataLoaderService` samples up to 20 Q&A pairs from the scraped JSON and builds a compact context prompt. Gemini generates `n` quiz questions with key-point rubrics.
 2. **Answer** — You select an MCQ option or type a free-text response.
-3. **Evaluate** — GPT-4o grades your answer against the key points and returns a verdict (✅ / ⚠️ / ❌), a 0–100 score, and written feedback.
+3. **Evaluate** — Gemini grades your answer against the key points and returns a verdict (✅ / ⚠️ / ❌), a 0–100 score, and written feedback.
 4. **Results** — An overall score ring + per-question review accordion. Results are saved to the **session history** (cleared when you close the tab).
 
 ---

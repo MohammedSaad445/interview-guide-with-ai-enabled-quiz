@@ -16,20 +16,20 @@ import java.util.List;
 
 /**
  * Core service that orchestrates AI-powered quiz generation and answer evaluation
- * using Spring AI's {@link ChatClient} backed by GPT-4o.
+ * using Spring AI's {@link ChatClient} backed by Gemini.
  *
  * <h3>Generation flow</h3>
  * <ol>
  *   <li>{@link DataLoaderService} samples up to N Q&amp;A pairs from the scraped JSON.</li>
- *   <li>A structured prompt is sent to GPT-4o asking it to generate quiz questions.</li>
+ *   <li>A structured prompt is sent to Gemini asking it to generate quiz questions.</li>
  *   <li>Spring AI's {@code BeanOutputConverter} deserializes the JSON response directly
  *       into {@code List<QuizQuestion>}.</li>
  * </ol>
  *
  * <h3>Evaluation flow</h3>
  * <ol>
- *   <li>The question, its key-points rubric, and the user's answer are sent to GPT-4o.</li>
- *   <li>GPT-4o returns a verdict / score / feedback JSON that is mapped to
+ *   <li>The question, its key-points rubric, and the user's answer are sent to Gemini.</li>
+ *   <li>Gemini returns a verdict / score / feedback JSON that is mapped to
  *       {@link EvaluateResponse}.</li>
  * </ol>
  */
@@ -229,7 +229,7 @@ public class QuizService {
      * and any leading/trailing whitespace from the raw AI response, returning only the
      * bare JSON string.
      *
-     * <p>GPT-4o occasionally wraps its output in code fences despite being instructed
+     * <p>Gemini occasionally wraps its output in code fences despite being instructed
      * not to.  This method normalizes such output so that Jackson can always parse it.</p>
      */
     private static String extractJson(String raw) {

@@ -58,7 +58,7 @@ export default function QuizSetup({ prefilledTopic, onStart, error }) {
           Test Your Knowledge
         </h1>
         <p className="text-gray-500 dark:text-gray-400 mt-2">
-          Powered by GPT-4o · Choose your topic and let AI quiz you
+          AI-Powered · Choose your topic and let AI quiz you
         </p>
       </div>
 

@@ -205,22 +205,22 @@ export default function QuizQuestion({
           </div>
         )}
 
-        {/* ── Next Question button ── */}
-        {isAnswered && (
-          <button
-            type="button"
-            onClick={onNext}
-            className="w-full py-3 rounded-xl bg-navy dark:bg-gray-700 hover:bg-navy-dark
-                       dark:hover:bg-gray-600 text-white font-bold text-sm transition-all
-                       flex items-center justify-center gap-2"
-          >
-            {questionNumber < totalQuestions ? (
-              <>Next Question <span>→</span></>
-            ) : (
-              <>View Results 🎉</>
-            )}
-          </button>
-        )}
+        {/* ── Next Question button — always visible, disabled until answered ── */}
+        <button
+          type="button"
+          onClick={onNext}
+          disabled={!isAnswered}
+          className="w-full py-3 rounded-xl bg-navy dark:bg-gray-700 hover:bg-navy-dark
+                     dark:hover:bg-gray-600 disabled:opacity-40 disabled:cursor-not-allowed
+                     text-white font-bold text-sm transition-all
+                     flex items-center justify-center gap-2"
+        >
+          {questionNumber < totalQuestions ? (
+            <>Next Question <span>→</span></>
+          ) : (
+            <>View Results 🎉</>
+          )}
+        </button>
       </div>
     </div>
   )

@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * <p>This Spring Boot application serves two things:</p>
  * <ol>
- *   <li>REST API at {@code /api/quiz/**} — powered by Spring AI (GPT-4o) to generate
+ *   <li>REST API at {@code /api/quiz/**} — powered by Spring AI to generate
  *       and evaluate quiz questions from the scraped interview data.</li>
  *   <li>The bundled React frontend (Vite build) as static resources from
  *       {@code src/main/resources/static/}.</li>

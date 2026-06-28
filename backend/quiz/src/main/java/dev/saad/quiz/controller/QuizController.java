@@ -38,7 +38,7 @@ public class QuizController {
     // ── POST /api/quiz/generate ───────────────────────────────────────────────
 
     /**
-     * Generates a list of quiz questions using GPT-4o based on the scraped topic data.
+     * Generates a list of quiz questions using Gemini based on the scraped topic data.
      *
      * @param request quiz configuration (topic, section, count, difficulty, mode)
      * @return 200 with {@code List<QuizQuestion>}, or 400/500 with an error message
