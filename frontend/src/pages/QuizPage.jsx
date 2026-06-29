@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import QuizSetup    from '../components/QuizSetup'
 import QuizQuestion from '../components/QuizQuestion'
 import QuizResults  from '../components/QuizResults'
-import { generateQuiz } from '../api/quizApi'
+import { generateQuiz, evaluateAnswer } from '../api/quizApi'
 
 // ── Loading screen shown while AI generates questions ────────────────────────
 function GeneratingSpinner() {
@@ -46,12 +46,15 @@ function GeneratingSpinner() {
 export default function QuizPage() {
   const { topicSlug } = useParams()  // pre-fill topic if arriving from /quiz/:topicSlug
 
-  const [phase,       setPhase]       = useState('setup')
-  const [questions,   setQuestions]   = useState([])
-  const [currentIdx,  setCurrentIdx]  = useState(0)
-  const [answers,     setAnswers]     = useState([])   // { userAnswer, verdict, score, feedback }
-  const [quizConfig,  setQuizConfig]  = useState(null)
-  const [genError,    setGenError]    = useState(null)
+  const [phase,         setPhase]         = useState('setup')
+  const [questions,     setQuestions]     = useState([])
+  const [currentIdx,    setCurrentIdx]    = useState(0)
+  const [answers,       setAnswers]       = useState([])   // { userAnswer, verdict, score, feedback }
+  const [quizConfig,    setQuizConfig]    = useState(null)
+  const [genError,      setGenError]      = useState(null)
+  const [userAnswers,   setUserAnswers]   = useState({})   // { [questionIdx]: answerString }
+  const [submittingAll, setSubmittingAll] = useState(false)
+  const [submitError,   setSubmitError]   = useState(null)
 
   // ── Called when user hits "Start Quiz" ──
   const handleStart = async (config) => {
@@ -64,6 +67,8 @@ export default function QuizPage() {
       setQuestions(qs)
       setCurrentIdx(0)
       setAnswers([])
+      setUserAnswers({})
+      setSubmitError(null)
       setPhase('quiz')
     } catch (e) {
       setGenError(e.message)
@@ -71,19 +76,56 @@ export default function QuizPage() {
     }
   }
 
-  // ── Called when an answer has been evaluated ──
-  const handleAnswer = (answerData) => {
-    setAnswers(prev => [...prev, answerData])
+  // ── Called when the user updates their answer for the current question ──
+  const handleAnswerChange = (idx, answer) => {
+    setUserAnswers(prev => ({ ...prev, [idx]: answer }))
   }
 
-  // ── Called when user clicks "Next Question" or "View Results" ──
+  // ── Navigate to previous question ──
+  const handlePrev = () => {
+    setCurrentIdx(idx => Math.max(0, idx - 1))
+  }
+
+  // ── Navigate to next question ──
   const handleNext = () => {
-    if (currentIdx < questions.length - 1) {
-      setCurrentIdx(idx => idx + 1)
-    } else {
+    setCurrentIdx(idx => Math.min(questions.length - 1, idx + 1))
+  }
+
+  // ── Called when user clicks "Submit Answers" on the last question ──
+  const handleSubmitAll = async () => {
+    if (submittingAll) return
+    setSubmittingAll(true)
+    setSubmitError(null)
+    setPhase('loading')
+    try {
+      const results = []
+      for (let i = 0; i < questions.length; i++) {
+        const question   = questions[i]
+        const userAnswer = userAnswers[i] ?? ''
+        // eslint-disable-next-line no-await-in-loop
+        const result = await evaluateAnswer({
+          question:  question.question,
+          keyPoints: question.keyPoints,
+          userAnswer,
+        })
+        results.push({ userAnswer, ...result })
+      }
+      setAnswers(results)
       setPhase('results')
+    } catch (e) {
+      setSubmitError(e.message)
+      setSubmittingAll(false)
+      setPhase('quiz')
     }
   }
+
+  // ── True only when every question has a non-empty answer ──
+  const allAnswered =
+    questions.length > 0 &&
+    questions.every((_, idx) => {
+      const ans = userAnswers[idx]
+      return ans !== undefined && ans !== ''
+    })
 
   // ── Retake same quiz configuration ──
   const handleRetake = () => handleStart(quizConfig)
@@ -96,6 +138,8 @@ export default function QuizPage() {
     setCurrentIdx(0)
     setQuizConfig(null)
     setGenError(null)
+    setUserAnswers({})
+    setSubmitError(null)
   }
 
   // ── Breadcrumb helper ──
@@ -128,12 +172,21 @@ export default function QuizPage() {
       )}
       {phase === 'quiz' && (
         <QuizQuestion
+          key={currentIdx}
           question={questions[currentIdx]}
           questionNumber={currentIdx + 1}
           totalQuestions={questions.length}
           mode={quizConfig.mode}
-          onAnswer={handleAnswer}
+          savedAnswer={userAnswers[currentIdx]}
+          onAnswerChange={(answer) => handleAnswerChange(currentIdx, answer)}
+          isFirst={currentIdx === 0}
+          isLast={currentIdx === questions.length - 1}
+          allAnswered={allAnswered}
+          onPrev={handlePrev}
           onNext={handleNext}
+          onSubmitAll={handleSubmitAll}
+          submittingAll={submittingAll}
+          submitError={submitError}
         />
       )}
       {phase === 'results' && (
