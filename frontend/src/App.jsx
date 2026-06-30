@@ -1,8 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
 import { ThemeProvider }       from './context/ThemeContext'
 import { QuizHistoryProvider } from './context/QuizHistoryContext'
-import Navbar       from './components/Navbar'
-import Footer       from './components/Footer'
+import Navbar         from './components/Navbar'
+import Footer         from './components/Footer'
+import PomodoroTimer  from './components/PomodoroTimer'
 import HomePage     from './pages/HomePage'
 import TopicPage    from './pages/TopicPage'
 import SectionPage  from './pages/SectionPage'
@@ -28,6 +29,7 @@ export default function App() {
             </Routes>
           </main>
           <Footer />
+          <PomodoroTimer />
         </div>
       </QuizHistoryProvider>
     </ThemeProvider>
