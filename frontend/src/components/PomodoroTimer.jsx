@@ -156,7 +156,8 @@ export default function PomodoroTimer() {
       {/* ── Floating panel ─────────────────────────────────────────────────── */}
       <div
         className={`fixed bottom-24 right-5 z-50 w-72 rounded-2xl shadow-2xl border border-white/10
-                    bg-[#0f172a] text-white overflow-hidden
+                    bg-[#0f172a] text-white overflow-y-auto
+                    max-h-[calc(100dvh-5rem)]
                     transition-all duration-300 ease-out origin-bottom-right
                     ${open ? 'scale-100 opacity-100 pointer-events-auto' : 'scale-90 opacity-0 pointer-events-none'}`}
       >
@@ -201,7 +202,7 @@ export default function PomodoroTimer() {
         </div>
 
         {/* Countdown ring */}
-        <div className="flex flex-col items-center pt-6 pb-4 gap-5">
+        <div className="flex flex-col items-center pt-4 pb-3 gap-4">
           <div className="relative select-none">
             <svg width="160" height="160" viewBox="0 0 160 160">
               {/* Track ring */}
@@ -269,13 +270,13 @@ export default function PomodoroTimer() {
         </div>
 
         {/* Tip bar */}
-        <div className="px-4 pb-4">
+        <div className="px-4 pb-3">
           <TipBar modeIdx={modeIdx} minutes={mode.minutes} sessions={sessions} />
         </div>
 
         {/* Session dots */}
         {sessions > 0 && (
-          <div className="px-4 pb-4 flex items-center gap-1.5 justify-center">
+          <div className="px-4 pb-3 flex items-center gap-1.5 justify-center">
             {Array.from({ length: Math.min(sessions, 12) }, (_, i) => i + 1).map((n) => (
               <span
                 key={n}
