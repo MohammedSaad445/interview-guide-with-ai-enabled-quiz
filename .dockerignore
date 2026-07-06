@@ -1,0 +1,49 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# IDE and editor files
+.idea
+.vscode
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# Build and dependency artifacts
+node_modules
+target
+dist
+build
+*.log
+logs
+
+# Development files
+.env
+.env.local
+.env.*.local
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Documentation (optional, remove if you want to include)
+docs
+
+# NPM
+npm-debug.log
+yarn-error.log
+.npmrc
+
+# Maven
+.m2
+
+# Local development files
+.mvn
+mvnw
+mvnw.cmd
+
