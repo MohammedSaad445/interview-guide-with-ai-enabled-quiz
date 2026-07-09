@@ -16,6 +16,9 @@ backend/quiz/target/node/
 frontend/node_modules/
 frontend/dist/
 
+# ─── common ─────────────────────────────────────────────────────────────────
+logs
+
 ### IntelliJ IDEA ###
 .idea/
 .idea/modules.xml
